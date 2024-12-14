@@ -61,10 +61,55 @@ else
 Console.WriteLine($"Product: {size} {color} {type}");
 
 //  Convert in SwitchCase
+Console.WriteLine("Scwitchcase");
+switch (product[0])
+{
+    case "01":
+        type = "Sweet Shirt";
+        Console.WriteLine(type);
+        break;
+    case "02":
+        type = "T-Shirt";
+        Console.WriteLine(type);
+        break;
+    case "03":
+        type = "Sweet Pant";
+        Console.WriteLine(type);
+        break;
+    default:
+        type = "other";
+        Console.WriteLine(type);
+        break;
+}
 
+switch (product[1])
+{
+    case "BL":
+        color = "Black";
+        break;
+    case "MN":
+        color = "Maroon";
+        break;
+    default:
+        color = "White";
+        break;
+}
 
-
-
+switch (product[2])
+{
+    case "S":
+        size = "Small";
+        break;
+    case "L":
+        size = "Large";
+        break;
+    case "M":
+        size = "Medium";
+        break;
+    default:
+        size = "All Size Fits";
+        break;
+}
 
 
 
